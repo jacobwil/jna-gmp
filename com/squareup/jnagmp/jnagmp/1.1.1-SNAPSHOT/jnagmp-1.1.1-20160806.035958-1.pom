@@ -3,13 +3,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <!-- This custom pseudo release pom is based on http://stackoverflow.com/a/14013645 -->
+  
 
-  <parent>
+  <!-- <parent>
     <groupId>com.squareup.jnagmp</groupId>
     <artifactId>jnagmp-parent</artifactId>
     <version>1.1.1-SNAPSHOT</version>
-  </parent>
+  </parent> -->
+  
+  <groupId>com.squareup.jnagmp</groupId>
+  <version>1.1.1-SNAPSHOT</version>
 
   <artifactId>jnagmp</artifactId>
   <name>JNA GMP</name>
@@ -25,7 +28,7 @@
       <name>Temporary Staging Repository</name>
       <url>file://${project.build.directory}/mvn-repo</url>
     </repository>
-  </distributionManagement>
+  </distributionManagement> 
 
   <build>
     <plugins>
@@ -75,6 +78,8 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <scope>test</scope>
+
+      <version>4.11</version>
     </dependency>
   </dependencies>
 </project>
